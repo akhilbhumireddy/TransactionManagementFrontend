@@ -8,8 +8,8 @@ Build a MERN-based **Transaction Management** application with CRUD capabilities
 
 - Frontend: React (or any JavaScript framework/library)
 - Backend: Node.js with Express.js
-- Database: SQL
-- Deployment (Optional): Free cloud hosting (e.g., Render, Vercel, or Heroku)
+- Database: MongoDB
+- Deployment: Render (backend deployed)
 
 ## Completion Instructions
 
@@ -65,7 +65,7 @@ Build a MERN-based **Transaction Management** application with CRUD capabilities
 1. Share the GitHub repository link with:
    - Backend: `/server` folder
    - Frontend: `/client` folder
-   - Deployment (if applicable): Hosted API URL.
+   - Deployment: Hosted API URL.
 2. Provide setup instructions in `README.md`.
 
 #### Nice to Have
@@ -100,3 +100,9 @@ Use the endpoints and examples provided in the assignment description.
 ### Example Input and Output
 
 Refer to the assignment description for API request/response examples.
+
+## Deployment Links
+
+- **Backend API**: [https://transactionmanagementbackend-2.onrender.com](https://transactionmanagementbackend-2.onrender.com)
+- **Backend GitHub Repository**: [TransactionManagementBackend](https://github.com/akhilbhumireddy/TransactionManagementBackend.git)
+- **Frontend GitHub Repository**: [TransactionManagementFrontend](https://github.com/akhilbhumireddy/TransactionManagementFrontend.git)

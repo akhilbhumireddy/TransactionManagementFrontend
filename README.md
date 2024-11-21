@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Full Stack Developer Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+Build a MERN-based **Transaction Management** application with CRUD capabilities for managing financial transactions, and optionally deploy it for public access.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- Frontend: React (or any JavaScript framework/library)
+- Backend: Node.js with Express.js
+- Database: SQL
+- Deployment (Optional): Free cloud hosting (e.g., Render, Vercel, or Heroku)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Completion Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Functionality
 
-### `npm test`
+#### Must Have
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **API Endpoints**:
 
-### `npm run build`
+   - **POST /api/transactions/**: Create a new transaction.
+   - **GET /api/transactions/**: Retrieve all transactions for a user.
+   - **PUT /api/transactions/{transaction_id}/**: Update the status of a transaction.
+   - **GET /api/transactions/{transaction_id}/**: Retrieve details of a transaction.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Transaction Model**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - `amount` (Decimal): Transaction amount.
+   - `transaction_type` (String): DEPOSIT or WITHDRAWAL.
+   - `user` (Reference): User ID.
+   - `timestamp` (DateTime): Transaction timestamp.
+   - `status` (String): PENDING, COMPLETED, FAILED.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Frontend Features**:
+   - Create transactions.
+   - View transaction history (list view).
+   - Update transaction status.
+   - View transaction details.
 
-### `npm run eject`
+#### Nice to Have
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Responsive UI design.
+- Filtering/sorting transactions by type or status.
+- Pagination or infinite scroll for transaction history.
+- Authentication for user-based access.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Guidelines to Develop the Project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Must Have
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Validate all API inputs and handle errors gracefully.
+2. Follow RESTful API conventions.
+3. Use consistent and clean code practices.
 
-## Learn More
+#### Nice to Have
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Use environment variables for sensitive data (e.g., `.env` for keys/config).
+2. Implement API response caching where appropriate.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Submission Instructions
 
-### Code Splitting
+#### Must Have
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Share the GitHub repository link with:
+   - Backend: `/server` folder
+   - Frontend: `/client` folder
+   - Deployment (if applicable): Hosted API URL.
+2. Provide setup instructions in `README.md`.
 
-### Analyzing the Bundle Size
+#### Nice to Have
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Include API documentation (e.g., using Swagger or Postman collection).
+2. Add unit tests for backend logic.
 
-### Making a Progressive Web App
+## Resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Design Files
 
-### Advanced Configuration
+N/A (custom design allowed).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### APIs
 
-### Deployment
+Use the endpoints and examples provided in the assignment description.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Third-party Packages
 
-### `npm run build` fails to minify
+- **Backend**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  - `express`: Web framework.
+  - `mongoose`: MongoDB ORM.
+  - `dotenv`: Environment variables.
+  - `body-parser`: Request parsing.
+
+- **Frontend**:
+  - `axios`: API calls.
+  - `react-router-dom`: Navigation (optional).
+  - `formik` or `react-hook-form`: Form management (optional).
+
+### Example Input and Output
+
+Refer to the assignment description for API request/response examples.

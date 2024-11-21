@@ -7,7 +7,7 @@ const TransactionForm = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const userId = 1; // Replace with actual user ID from authentication
+    const userId = 1;
     onSubmit({
       amount: parseFloat(amount),
       transaction_type: type,

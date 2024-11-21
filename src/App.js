@@ -23,7 +23,7 @@ const App = () => {
   const loadTransactions = async () => {
     try {
       setLoading(true);
-      const userId = 1; // Replace with actual user ID from authentication
+      const userId = 1;
       const data = await fetchTransactions(userId);
       setTransactions(data.transactions);
     } catch (err) {
